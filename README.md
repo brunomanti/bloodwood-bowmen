@@ -1,12 +1,13 @@
-# Bloodwood Bowmen: True Rivals
+# Bloodwood Bowmen: Reserve Line
 
 Public mobile-first archer duel game.
 
 - Live: https://brunomanti.github.io/bloodwood-bowmen/
-- Build: `bloodwood-bowmen-v20260620-0759-true-rivals`
+- Build: `bloodwood-bowmen-v20260620-0818-reserve-line`
 - Full-screen landscape canvas with only a Menu button visible during play.
 - Visual direction: cinematic moonlit orchard, ember/gold target explosions, painterly silhouettes, dramatic silhouettes instead of toy/cartoon figures.
 - True Rivals release: opponents aim at the player with skill/difficulty-scaled ballistic shots, misses come from random target error, the camera follows arrows, hit reactions are lively, and cleared levels automatically advance.
+- Reserve Line release: starts very zoomed out, removes targets from duel levels so they cannot shield opponents, and adds a reinforcement level where fallen players and rivals are replaced from reserves.
 - Controls: robust pointer + touch + mouse drag-to-draw support for iOS standalone/PWA, Safari, Chrome, and desktop smoke tests.
 - Menu: resilient touch/click open/close, fullscreen, iOS install help, zoom, and all levels open.
 - No in-game log-download feature. Hermes/session logs document the app creation process; runtime telemetry is kept local only for debugging.
