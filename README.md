@@ -1,9 +1,9 @@
-# Bloodwood Bowmen: Night Orchard
+# Bloodwood Bowmen: Long Draw
 
 Public mobile-first archer duel game.
 
 - Live: https://brunomanti.github.io/bloodwood-bowmen/
-- Build: `bloodwood-bowmen-v20260620-0132-night-orchard`
+- Build: `bloodwood-bowmen-v20260620-0211-long-draw`
 - Full-screen landscape canvas with only a Menu button visible during play.
 - Visual direction: cinematic moonlit orchard, ember/gold target explosions, painterly silhouettes, dramatic silhouettes instead of toy/cartoon figures.
 - Controls: robust pointer + touch + mouse drag-to-draw support for iOS standalone/PWA, Safari, Chrome, and desktop smoke tests.
