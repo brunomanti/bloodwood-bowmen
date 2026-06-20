@@ -1,26 +1,25 @@
-# Bloodwood Bowmen
+# Bloodwood Bowmen: True Draw
 
-Mobile-first landscape canvas game: competing bowmen, draggable bow force/direction, destructible targets, escalating AI opponents, playful splattery cartoon damage, and zoomable side-section view.
+Public mobile-first archer duel game.
 
-Public build id: `bloodwood-bowmen-v20260619-2059-bad-apple`
+- Live: https://brunomanti.github.io/bloodwood-bowmen/
+- Build: `bloodwood-bowmen-v20260620-0017-true-draw`
+- Full-screen landscape canvas with only a Menu button visible during play.
+- Realistic human archer silhouettes, drag-to-draw bow physics, wind, zoom, open levels, opponent duel levels, and exploding targets.
+- PWA/iOS installation support: manifest, service worker, Apple touch icon, and in-game Add to Home Screen instructions.
+- Telemetry: client events include build id, session id, level, turn, viewport, pointer/shot/hit/explosion/menu/fullscreen/install/log-download events; static Pages stores locally and the included Node backend can receive `/api/log`.
 
-## Telemetry/logging
-
-The browser records every significant interaction and simulation event with the unique `buildId` and session id:
-
-- boot, resize, pointer down/drag/up
-- arrows fired, hits, misses, target degradation/destruction
-- opponent actions, level transitions, status messages
-- errors and unhandled promise rejections
-
-On GitHub Pages the log is retained locally in `localStorage` and downloadable from the **Logs** button. The repo also includes `backend/server.js`, a Fastify logger that writes all HTTP requests and `/api/log` client events to daily NDJSON files when deployed on any Node host. The client uses `navigator.sendBeacon('/api/log', ...)` automatically when a backend is present.
-
-## Local
+## Develop
 
 ```bash
-npm install
 npm test
+python3 -m http.server 4177
+```
+
+## Backend logger
+
+```bash
 npm run backend
 ```
 
-Then open `http://localhost:8080`.
+Then POST client telemetry to `/api/log`; daily NDJSON logs are written under `logs/`.
