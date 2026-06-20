@@ -1,11 +1,12 @@
-# Bloodwood Bowmen: Long Draw
+# Bloodwood Bowmen: True Rivals
 
 Public mobile-first archer duel game.
 
 - Live: https://brunomanti.github.io/bloodwood-bowmen/
-- Build: `bloodwood-bowmen-v20260620-0211-long-draw`
+- Build: `bloodwood-bowmen-v20260620-0759-true-rivals`
 - Full-screen landscape canvas with only a Menu button visible during play.
 - Visual direction: cinematic moonlit orchard, ember/gold target explosions, painterly silhouettes, dramatic silhouettes instead of toy/cartoon figures.
+- True Rivals release: opponents aim at the player with skill/difficulty-scaled ballistic shots, misses come from random target error, the camera follows arrows, hit reactions are lively, and cleared levels automatically advance.
 - Controls: robust pointer + touch + mouse drag-to-draw support for iOS standalone/PWA, Safari, Chrome, and desktop smoke tests.
 - Menu: resilient touch/click open/close, fullscreen, iOS install help, zoom, and all levels open.
 - No in-game log-download feature. Hermes/session logs document the app creation process; runtime telemetry is kept local only for debugging.
