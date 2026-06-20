@@ -1,0 +1,16 @@
+const fs = require('fs');
+const assert = require('assert');
+const js = fs.readFileSync('game.js','utf8');
+assert(js.includes('bloodwood-bowmen-v20260619-2059-bad-apple'));
+assert(js.includes('navigator.sendBeacon'));
+assert(js.includes('/api/log'));
+assert(js.includes('localStorage'));
+assert(js.includes('LEVELS'));
+assert((js.match(/mode:"duel"/g)||[]).length >= 3);
+assert((js.match(/mode:"targets"/g)||[]).length >= 2);
+assert(js.includes('damageTarget') && js.includes('t.hp--'));
+assert(js.includes('pointerdown') && js.includes('pointerup'));
+const html = fs.readFileSync('index.html','utf8');
+assert(html.includes('viewport'));
+assert(html.includes('canvas'));
+console.log('ok: build id, telemetry, levels, target degradation, drag controls, mobile viewport present');

@@ -1,0 +1,25 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no,viewport-fit=cover" />
+  <meta name="theme-color" content="#33151b" />
+  <title>Bloodwood Bowmen: Bad Apple Build</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div id="rotate"><b>Rotate to landscape</b><span>Bowmen need room to duel.</span></div>
+  <main id="gameShell">
+    <canvas id="game" aria-label="Bloodwood Bowmen game canvas"></canvas>
+    <section id="hud">
+      <div><b>Bloodwood Bowmen</b><span id="build"></span></div>
+      <div id="levelName"></div>
+      <div id="wind"></div>
+      <div id="status"></div>
+      <button id="zoomOut">−</button><button id="zoomIn">+</button><button id="next">Next</button><button id="logs">Logs</button>
+    </section>
+    <section id="help">Drag from your bowman, pull back, release. Longer drag = more force. Pinch/zoom buttons change the side-section view.</section>
+  </main>
+  <script src="game.js"></script>
+</body>
+</html>

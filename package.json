@@ -1,0 +1,1 @@
+{"scripts":{"test":"node test.js","serve":"python3 -m http.server 4177","backend":"node backend/server.js"},"devDependencies":{},"dependencies":{"@fastify/static":"latest","fastify":"latest"},"engines":{"node":">=20"}}
