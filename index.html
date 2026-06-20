@@ -3,31 +3,43 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no,viewport-fit=cover" />
-  <meta name="theme-color" content="#120b08" />
+  <meta name="theme-color" content="#050507" />
   <meta name="apple-mobile-web-app-capable" content="yes" />
   <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
   <meta name="apple-mobile-web-app-title" content="Bloodwood" />
   <meta name="mobile-web-app-capable" content="yes" />
-  <title>Bloodwood Bowmen — True Draw</title>
-  <link rel="manifest" href="manifest.webmanifest?v=bloodwood-bowmen-v20260620-0017-true-draw" />
-  <link rel="apple-touch-icon" href="icons/icon-180.png?v=bloodwood-bowmen-v20260620-0017-true-draw" />
-  <link rel="icon" href="icons/icon-192.png?v=bloodwood-bowmen-v20260620-0017-true-draw" />
-  <link rel="stylesheet" href="styles.css?v=bloodwood-bowmen-v20260620-0017-true-draw" />
+  <title>Bloodwood Bowmen — Night Orchard</title>
+  <link rel="manifest" href="manifest.webmanifest?v=bloodwood-bowmen-v20260620-0132-night-orchard" />
+  <link rel="apple-touch-icon" href="icons/icon-180.png?v=bloodwood-bowmen-v20260620-0132-night-orchard" />
+  <link rel="icon" href="icons/icon-192.png?v=bloodwood-bowmen-v20260620-0132-night-orchard" />
+  <link rel="stylesheet" href="styles.css?v=bloodwood-bowmen-v20260620-0132-night-orchard" />
 </head>
 <body>
-  <button id="menuButton" aria-controls="menuPanel" aria-expanded="false">Menu</button>
   <main id="gameShell">
-    <canvas id="game" aria-label="Bloodwood Bowmen realistic archer duel canvas"></canvas>
+    <canvas id="game" aria-label="Bloodwood Bowmen Night Orchard archer duel canvas"></canvas>
   </main>
+  <button id="menuButton" class="chromeButton" type="button" aria-controls="menuPanel" aria-expanded="false">Menu</button>
   <section id="menuPanel" aria-hidden="true">
-    <div class="menuCard">
-      <div class="menuTop"><div><h1>Bloodwood Bowmen</h1><p id="buildLabel">bloodwood-bowmen-v20260620-0017-true-draw</p></div><button id="closeMenu">Close</button></div>
-      <div class="menuGrid"><button id="fullscreen">Full Screen</button><button id="installIOS">Install on iOS</button><button id="zoomOut">Zoom −</button><button id="zoomIn">Zoom +</button><button id="logs">Download Logs</button></div>
-      <h2>All levels open</h2><div id="levelGrid"></div>
-      <div id="installHelp" hidden><h2>iOS installer</h2><p>On iPhone or iPad: tap Share, choose Add to Home Screen, then launch Bloodwood from the new icon. This build includes the manifest, service worker, and Apple touch icon for standalone play.</p></div>
+    <div class="menuCard" role="dialog" aria-modal="true" aria-label="Bloodwood Bowmen menu">
+      <div class="menuTop">
+        <div><h1>Bloodwood Bowmen</h1><p>Night Orchard build · bloodwood-bowmen-v20260620-0132-night-orchard</p></div>
+        <button id="closeMenu" type="button">Close</button>
+      </div>
+      <div class="menuGrid">
+        <button id="fullscreen" type="button">Full Screen</button>
+        <button id="installIOS" type="button">Install on iOS</button>
+        <button id="zoomOut" type="button">Zoom −</button>
+        <button id="zoomIn" type="button">Zoom +</button>
+      </div>
+      <h2>All levels open</h2>
+      <div id="levelGrid"></div>
+      <div id="installHelp" hidden>
+        <h2>iOS install</h2>
+        <p>Open in Safari, tap Share, choose Add to Home Screen, then launch Bloodwood from the icon. If an older icon is broken, delete it first so iOS discards the stale standalone cache.</p>
+      </div>
     </div>
   </section>
-  <div id="rotate"><b>Rotate to landscape</b><span>True Draw is built for sideways mobile play.</span></div>
-  <script src="game.js?v=bloodwood-bowmen-v20260620-0017-true-draw"></script>
+  <div id="rotate"><b>Rotate to landscape</b><span>Night Orchard is built for sideways mobile play.</span></div>
+  <script src="game.js?v=bloodwood-bowmen-v20260620-0132-night-orchard"></script>
 </body>
 </html>
